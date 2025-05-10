@@ -9,12 +9,12 @@ def normalize_text(text):
     )
     return normalized.casefold()  # convertir a minúsculas
 
-# Función para leer preguntas y respuestas desde un archivo CSV.
+
 def leer_preguntas_csv(nombre_archivo):
     preguntas_respuestas = []
     try:
         with open(nombre_archivo, newline='', encoding='utf-8') as csvfile:
-            reader = csv.reader(csvfile)
+            reader = csv.reader(csvfile, delimiter=';')
             # Verificar si la primera fila es cabecera (por ejemplo, "pregunta,respuesta").
             try:
                 first_row = next(reader)
@@ -54,7 +54,7 @@ def encontrar_mejor_respuesta(pregunta_usuario, base_preguntas):
 def agregar_pregunta_respuesta(nueva_pregunta, nueva_respuesta, nombre_archivo, base_preguntas):
     try:
         with open(nombre_archivo, 'a', newline='', encoding='utf-8') as csvfile:
-            writer = csv.writer(csvfile)
+            writer = csv.writer(csvfile, delimiter=';')
             writer.writerow([nueva_pregunta, nueva_respuesta])
         # Actualizar también la lista en memoria.
         base_preguntas.append((nueva_pregunta, nueva_respuesta))
@@ -69,7 +69,7 @@ def main():
     # Si el CSV estaba vacío o no existía, inicializar con algunos ejemplos.
     if not base_preguntas:
         with open(NOMBRE_CSV, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.writer(csvfile)
+            writer = csv.writer(csvfile, delimiter=';')
             writer.writerow(['pregunta', 'respuesta'])  # escribir cabecera
             ejemplos = [
     ("¿Qué es un Gran Premio en Fórmula 1?", "Un Gran Premio es una carrera que forma parte del calendario de la temporada de Fórmula 1, celebrada en circuitos específicos alrededor del mundo."),

@@ -1,11 +1,11 @@
 import csv, difflib, unicodedata, json, os
 
 def normalize_text(text):
- """
+    """
     Objetivo: Normalizar un texto eliminando acentos y convirtiendo todos los caracteres a minúsculas.
     Parámetros de Entrada: text (str): Texto a normalizar.
     Parámetros de Salida: str: Texto normalizado sin acentos y en minúsculas.
-"""
+    """
     normalized = ''.join(
         c for c in unicodedata.normalize('NFD', text)
         if unicodedata.category(c) != 'Mn'
@@ -14,11 +14,11 @@ def normalize_text(text):
 
 def leer_preguntas_csv(nombre_archivo):
 
-"""
+    """
     Objetivo: Leer preguntas y respuestas desde un archivo CSV separado por ';'.
     Parámetros de Entrada:nombre_archivo (str): Nombre del archivo CSV a leer.
     Parámetros de Salida: list: Lista de tuplas con pares (pregunta, respuesta).
-"""
+    """
     preguntas_respuestas = []
     try:
         with open(nombre_archivo, newline='', encoding='utf-8') as csvfile:
@@ -45,11 +45,11 @@ def leer_preguntas_csv(nombre_archivo):
 
 def leer_preguntas_txt(nombre_archivo):
 
- """
+    """
     Objetivo:Leer preguntas y respuestas desde un archivo de texto, cada línea con formato "pregunta:respuesta".
     Parámetros de Entrada: nombre_archivo (str): Nombre del archivo TXT a leer.
     Parámetros de Salida: list: Lista de tuplas con pares (pregunta, respuesta).
-"""
+    """
     preguntas_respuestas = []
     try:
         with open(nombre_archivo, 'r', encoding='utf-8') as txtfile:
@@ -69,11 +69,11 @@ def leer_preguntas_txt(nombre_archivo):
 
 def leer_preguntas_json(nombre_archivo):
 
- """
+    """
     Objetivo:Leer preguntas y respuestas desde un archivo JSON con objetos que contienen "pregunta" y "respuesta".
     Parámetros de Entrada:nombre_archivo (str): Nombre del archivo JSON a leer.
     Parámetros de Salida:list: Lista de tuplas con pares (pregunta, respuesta).
- """
+    """
     preguntas_respuestas = []
     try:
         with open(nombre_archivo, 'r', encoding='utf-8') as jsonfile:
@@ -102,14 +102,14 @@ def leer_preguntas_json(nombre_archivo):
 
 def encontrar_mejor_respuesta(pregunta_usuario, base_preguntas):
 
-"""
+    """
     Objetivo: Encontrar la respuesta más similar a la pregunta del usuario usando coincidencia difusa.
     Parámetros de Entrada:
         pregunta_usuario (str): Pregunta realizada por el usuario.
         base_preguntas (list): Lista de tuplas con pares (pregunta, respuesta).
     Parámetros de Salida:
          str or None: La mejor respuesta encontrada o None si no se encontró coincidencia suficiente.
- """
+    """
     pregunta_norm = normalize_text(pregunta_usuario)
     preguntas_norm = [normalize_text(p) for p, _ in base_preguntas]
     coincidencias = difflib.get_close_matches(pregunta_norm, preguntas_norm, n=1, cutoff=0.6)
@@ -121,7 +121,7 @@ def encontrar_mejor_respuesta(pregunta_usuario, base_preguntas):
         return None
 
 def agregar_pregunta_respuesta(nueva_pregunta, nueva_respuesta, nombre_archivo, base_preguntas):
- """
+    """
     Objetivo: Agregar una nueva pregunta y su respuesta al archivo correspondiente (CSV, TXT o JSON) y a la base en memoria.
     Parámetros de Entrada:
         nueva_pregunta (str): Pregunta que se desea agregar.
@@ -130,7 +130,7 @@ def agregar_pregunta_respuesta(nueva_pregunta, nueva_respuesta, nombre_archivo, 
         base_preguntas (list): Lista actual de preguntas/respuestas en memoria.
     Parámetros de Salida:
         bool: True si se agregó correctamente, False en caso contrario.
- """
+    """
     try:
         if nombre_archivo.endswith('.csv'):
             with open(nombre_archivo, 'a', newline='', encoding='utf-8') as csvfile:

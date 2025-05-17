@@ -1,0 +1,52 @@
+﻿Pregunta:Respuesta
+¿Quién es el piloto con más campeonatos mundiales en la historia de la F1?:Lewis Hamilton y Michael Schumacher comparten el récord con siete títulos cada uno, destacándose Hamilton en la era híbrida con Mercedes.
+¿En qué año se celebró el primer campeonato mundial de Fórmula 1?:El primer campeonato mundial de Fórmula 1 se celebró en 1950, con siete Grandes Premios oficiales.
+¿Qué escudería tiene más títulos de constructores en la historia de la F1?:Ferrari lidera el palmarés con 16 campeonatos de constructores desde 1958.
+¿Qué piloto argentino ganó cinco campeonatos mundiales de F1 en la década de los 50?:Juan Manuel Fangio conquistó cinco títulos (1951, 1954, 1955, 1956 y 1957).
+¿Cuál es el circuito más largo del calendario actual de la F1?:Spa-Francorchamps en Bélgica mide 7,004 km y destaca por sus curvas rápidas y elevaciones.
+¿Qué piloto ostenta el récord de más victorias en Grandes Premios?:Lewis Hamilton acumula 103 triunfos, el mayor total en la historia de la categoría.
+¿Cuál fue el equipo dominante desde 2014 con la llegada de los motores híbridos?:Mercedes AMG Petronas ganó siete títulos de constructores consecutivos (2014–2020).
+¿Qué piloto tiene el récord de más poles positions en F1?:Lewis Hamilton registra 104 poles, reflejo de su superioridad en clasificación.
+¿Quién fue el primer campeón mundial de Fórmula 1?:Giuseppe Farina se llevó el título inaugural en 1950 pilotando para Alfa Romeo.
+¿Cuál es el Gran Premio más antiguo que aún forma parte del calendario?:El Gran Premio de Mónaco se corre desde 1929 y como Mundial desde 1950.
+¿Qué piloto posee el récord de más vueltas rápidas en carrera?:Michael Schumacher sumó 77 vueltas rápidas a lo largo de su carrera.
+¿Qué circuito se encuentra a mayor altitud sobre el nivel del mar?:El Autódromo Hermanos Rodríguez en Ciudad de México está a 2 285 m de altitud.
+¿Qué Gran Premio atrae a más espectadores durante el fin de semana?:Silverstone en Reino Unido reúne más de 350 000 aficionados cada año.
+¿Quién es el campeón mundial más joven de la historia de la F1?:Sebastian Vettel se coronó en 2010 con 23 años y 134 días.
+¿Quién es el piloto ganador de Gran Premio de mayor edad?:Louis Chiron ganó el GP de Mónaco de 1955 a los 55 años.
+¿Qué piloto logró más victorias consecutivas en una temporada?:Sebastian Vettel ganó nueve carreras seguidas en 2013.
+¿Qué piloto ha logrado la mayor puntuación en una sola temporada?:Lewis Hamilton sumó 413 puntos en 2019.
+¿Qué circuito tiene el mayor número de curvas por vuelta?:El Hungaroring en Hungría cuenta con 14 curvas.
+¿Qué país ha acogido más Grandes Premios de F1?:Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados.
+¿Qué escudería ha participado en todas las temporadas desde 1950?:Ferrari es el único equipo presente en todas las campañas del Mundial.
+¿Qué piloto ostenta el récord de más podios en su carrera?:Lewis Hamilton acumula 191 podios.
+¿Quién ganó en su debut en un GP puntuable del Campeonato?:Giancarlo Baghetti ganó el GP de Francia de 1961 en su primera carrera.
+¿Qué circuito tiene la menor velocidad media por vuelta?:El GP de Mónaco registra la velocidad media más baja, alrededor de 160 km/h.
+¿Qué piloto encadenó más carreras consecutivas puntuando?:Lewis Hamilton puntuó en 48 Grandes Premios seguidos entre 2018 y 2020.
+¿Cuál es el equipo con más victorias sin título de constructores?:Toro Rosso (actual AlphaTauri) logró dos victorias sin ganar nunca el título.
+¿Qué piloto ostenta la mayor ventaja en una victoria?:Nigel Mansell ganó el GP de España 1992 con más de un minuto de ventaja.
+¿Qué circuito tiene la recta más larga del calendario actual?:La recta de Kemmel en Spa-Francorchamps supera 1,8 km.
+¿Qué piloto debutó con mayor edad en la parrilla de F1?:Derek Bell debutó a los 28 años en 1974.
+¿Qué piloto logró más poles en una sola temporada?:Sebastian Vettel hizo 15 poles en 2011.
+¿Qué Gran Premio ha tenido más ediciones bajo lluvia intensa?:El GP de Bélgica es famoso por sus condiciones variables y fuertes lluvias.
+¿Qué reglamento introdujo el dispositivo Halo?:La F1 instauró el Halo en 2018 para proteger a los pilotos de impactos de objetos voladores.
+¿Cuál fue el primer equipo en usar frenos de disco?:Lotus incorporó frenos de disco en 1960, mejorando significativamente la frenada.
+¿Qué piloto ganó más carreras para Ferrari?:Michael Schumacher triunfó en 72 Grandes Premios con Ferrari.
+¿Quién es el piloto más joven en lograr una pole position?:Sebastian Vettel consiguió la pole en Malasia 2008 con 21 años.
+¿Qué piloto es el más joven en subir al podio?:Max Verstappen logró su primer podio en Malasia 2016 con 18 años.
+¿Qué equipo realizó el pit stop más rápido de la historia?:Red Bull Racing completó un cambio de neumáticos en 1,82 s en Brasil 2019.
+¿Qué circuito se ha rediseñado en más ocasiones?:El Hockenheimring ha sufrido múltiples modificaciones desde 1970.
+¿Cuál ha sido el año con más vencedores diferentes en una temporada?:En 2012 hubo ocho ganadores distintos, la cifra más alta.
+¿Qué piloto acumula más abandonos en su carrera?:Rubens Barrichello registró 82 abandonos.
+¿Qué equipo sumó más puntos en una temporada con el antiguo sistema (9-6-4-3-2-1)?:McLaren alcanzó 255 puntos en 1988.
+¿Qué piloto lideró más vueltas a lo largo de su trayectoria?:Lewis Hamilton lideró más de 6 500 giros en Grandes Premios.
+¿Cuál es la mayor diferencia de tiempo entre el 1.º y 2.º en una clasificación?:Jim Clark sacó más de dos segundos de ventaja en la pole del GP de Bélgica 1967.
+¿Qué fabricante de motores acumula más victorias como proveedor?:Mercedes ha ganado más de 125 Grandes Premios desde su retorno en 2010.
+¿Quién fue el primer piloto en correr con motor turbo en F1?:René Arnoux probó un motor turbo con Renault en 1977.
+¿Qué piloto ganó más títulos consecutivos de F1?:Michael Schumacher ganó cinco campeonatos seguidos de 2000 a 2004.
+¿Qué circuito fue el primero en albergar un Gran Premio nocturno?:El circuito de Sakhir en Bahréin celebró el primer GP bajo luces en 2008.
+¿Qué sistema de adelantamiento con ala móvil se implementó en 2011?:El DRS (Drag Reduction System) debutó en 2011 para facilitar los adelantamientos.
+¿Qué sanción implica la bandera negra?:La bandera negra excluye inmediatamente al piloto del Gran Premio por infracción grave.
+¿Qué piloto regresó al podio semanas después de un grave accidente?:Niki Lauda volvió y subió al podio en Italia 1976 seis semanas tras su accidente en Nürburgring.
+¿Qué récord de vuelta rápida en carrera perduró más tiempo sin ser batido?:La vuelta de 1:12.371 de Nigel Mansell en Silverstone 1992 se mantuvo como récord durante años.
+quien gano la ultima temporada:Max verstappen ganó la temporada de 2024

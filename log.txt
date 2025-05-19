@@ -1,0 +1,5 @@
+2025-05-19 16:04:08	Pregunta: "piloto con mas campeonatos en la historia"	Respuesta: "Lewis Hamilton y Michael Schumacher comparten el récord con siete títulos cada uno, destacándose Hamilton en la era híbrida con Mercedes."	Similitud: 0.73
+2025-05-19 16:04:40	Pregunta: "piloto campeonatos"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-19 16:05:12	Pregunta: "piloto encadeno carreras puntuando"	Respuesta: "Lewis Hamilton puntuó en 48 Grandes Premios seguidos entre 2018 y 2020."	Similitud: 0.75
+2025-05-19 16:10:33	Pregunta: "gran premio"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-19 16:11:25	Pregunta: "grandes premios"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00

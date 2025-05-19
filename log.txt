@@ -3,3 +3,8 @@
 2025-05-19 16:05:12	Pregunta: "piloto encadeno carreras puntuando"	Respuesta: "Lewis Hamilton puntuó en 48 Grandes Premios seguidos entre 2018 y 2020."	Similitud: 0.75
 2025-05-19 16:10:33	Pregunta: "gran premio"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
 2025-05-19 16:11:25	Pregunta: "grandes premios"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-19 16:20:04	Pregunta: "python -u "c:\Users\Juan\Desktop\chikichikiTeam\chatbot.py""	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-19 16:21:10	Pregunta: "python -u "c:\Users\Juan\Desktop\chikichikiTeam\chatbot.py""	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-19 16:21:17	Pregunta: "a"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-19 16:21:35	Pregunta: "bandera negra"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-19 16:21:58	Pregunta: "que es la bandera negra"	Respuesta: "La bandera negra excluye inmediatamente al piloto del Gran Premio por infracción grave."	Similitud: 0.74

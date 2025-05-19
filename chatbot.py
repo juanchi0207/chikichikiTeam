@@ -166,17 +166,24 @@ elif os.path.exists(NOMBRE_JSON):
     base_preguntas = leer_preguntas_json(NOMBRE_JSON)
     file_name = NOMBRE_JSON
 else:
-    file_name = NOMBRE_JSON
-    base_preguntas = []
-    with open(file_name, 'w', encoding='utf-8') as f:
-        json.dump([], f, ensure_ascii=False, indent=4)
+    file_name = NOMBRE_CSV
+    base_preguntas = [
+        ("¿Qué es un Gran Premio en Fórmula 1?", "Un Gran Premio es una carrera del campeonato de F1 que se celebra en diferentes países."),
+        ("¿Qué significa pole position?", "La pole position es la primera posición de largada obtenida por el piloto más rápido en clasificación."),
+        ("¿Cuántos puntos se otorgan al ganador de una carrera de F1?", "Al ganador se le otorgan 25 puntos en el campeonato.")
+    ]
+    with open(file_name, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f, delimiter=';')
+        writer.writerow(['pregunta', 'respuesta'])
+        writer.writerows(base_preguntas)
+    print(f"Archivo '{file_name}' creado con preguntas de ejemplo sobre F1.")
 
-print("Bienvenido al asistente. Escriba su pregunta o 'salir' para terminar.")
+print("Bienvenido al ChikiChiki Bot de preguntas sobre Fórmula 1. Escriba su pregunta o 'salir' para terminar.")
 
 while True:
     entrada = input("Usuario: ").strip()
     if entrada.lower() == 'salir':
-        print("Asistente: ¡Hasta luego!")
+        print("ChikiChiki Bot: ¡Hasta luego!")
         break
     if not entrada:
         continue
@@ -185,17 +192,17 @@ while True:
     mejor = sugerencias[0] if sugerencias else (None, None, 0)
 
     if mejor[2] >= 0.6:
-        print(f"Asistente: (Similitud {int(mejor[2]*100)}%)")
-        print(f"Asistente: {mejor[1]}")
+        print(f"ChikiChiki Bot: (Similitud {int(mejor[2]*100)}%)")
+        print(f"ChikiChiki Bot: {mejor[1]}")
         registrar_en_log(entrada, mejor[1], mejor[2])
     else:
-        print("Asistente: No encontré una respuesta exacta.")
+        print("ChikiChiki Bot: No encontré una respuesta exacta.")
         if sugerencias:
-            print("Asistente: ¿Quizás quiso decir:")
+            print("ChikiChiki Bot: ¿Quizás quiso decir:")
             for i, (preg, _, sim) in enumerate(sugerencias, 1):
                 print(f"  {i}. {preg} (similitud: {int(sim*100)}%)")
         registrar_en_log(entrada, "SIN RESPUESTA", 0.0)
-        op = input("¿Desea agregar esta pregunta y su respuesta? (s/n): ").strip().lower()
+        op = input("De cualquier manera ¿Deseas agregar la respuesta a tu pregunta a la base de datos? (s/n): ").strip().lower()
         if op == 's':
             nueva_resp = input("Ingrese la respuesta: ").strip()
             if nueva_resp:
@@ -210,7 +217,7 @@ while True:
                 elif file_name.endswith('.txt'):
                     with open(file_name, 'a', encoding='utf-8') as f:
                         f.write(f"{entrada}:{nueva_resp}\n")
-                print("Asistente: ¡Pregunta y respuesta agregadas!")
+                print("ChikiChiki Bot: ¡Pregunta y respuesta agregadas!")
                 registrar_en_log(entrada, "(Agregada por usuario)", 0.0)
             else:
-                print("Asistente: Respuesta vacía. No se agregó nada.")
+                print("ChikiChiki Bot: Respuesta vacía. No se agregó nada.")

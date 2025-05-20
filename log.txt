@@ -10,3 +10,4 @@
 2025-05-19 16:21:58	Pregunta: "que es la bandera negra"	Respuesta: "La bandera negra excluye inmediatamente al piloto del Gran Premio por infracción grave."	Similitud: 0.74
 2025-05-20 14:02:18	Pregunta: "grandes premios ganados"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
 2025-05-20 14:05:25	Pregunta: "python -u "c:\Users\Juan\Desktop\chikichikiTeam\chatbot.py""	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-20 14:11:37	Pregunta: "python -u "c:\Users\Juan\Desktop\chikichikiTeam\chatbot.py""	Respuesta: "SIN RESPUESTA"	Similitud: 0.00

@@ -41,7 +41,6 @@ def leer_preguntas_csv(nombre_archivo):
                 pregunta = row[0].strip()
                 respuesta = row[1].strip() if len(row) > 1 else ""
                 preguntas_respuestas.append((pregunta, respuesta))
-            print(preguntas_respuestas)
     except FileNotFoundError:
         return preguntas_respuestas
     except Exception as e:
@@ -56,7 +55,7 @@ def leer_preguntas_txt(nombre_archivo):
     """
     preguntas_respuestas = []
     try:
-        with open(nombre_archivo, 'r', encoding='utf-8') as txtfile:
+        with open(nombre_archivo, 'r', encoding='utf-8-sig') as txtfile:
             for line in txtfile:
                 line = line.strip()
                 if not line:
@@ -79,7 +78,7 @@ def leer_preguntas_json(nombre_archivo):
     """
     preguntas_respuestas = []
     try:
-        with open(nombre_archivo, 'r', encoding='utf-8') as jsonfile:
+        with open(nombre_archivo, 'r', encoding='utf-8-sig') as jsonfile:
             data = json.load(jsonfile)
             if isinstance(data, list):
                 for entrada in data:

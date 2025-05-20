@@ -25,14 +25,14 @@ def leer_preguntas_csv(nombre_archivo):
     """
     preguntas_respuestas = []
     try:
-        with open(nombre_archivo, newline='', encoding='utf-8') as csvfile:
+        with open(nombre_archivo, newline='', encoding='utf-8-sig') as csvfile:
             reader = csv.reader(csvfile, delimiter=';')
             try:
                 first_row = next(reader)
             except StopIteration:
                 return preguntas_respuestas
             if first_row and first_row[0].strip().lower() == 'pregunta':
-                pass
+                pass  # Es encabezado, lo salteamos
             else:
                 preguntas_respuestas.append((first_row[0], first_row[1]) if len(first_row) >= 2 else (first_row[0], ""))
             for row in reader:
@@ -41,6 +41,7 @@ def leer_preguntas_csv(nombre_archivo):
                 pregunta = row[0].strip()
                 respuesta = row[1].strip() if len(row) > 1 else ""
                 preguntas_respuestas.append((pregunta, respuesta))
+            print(preguntas_respuestas)
     except FileNotFoundError:
         return preguntas_respuestas
     except Exception as e:
@@ -153,71 +154,84 @@ def registrar_en_log(pregunta, respuesta, similitud):
 # Main
 # =========================================
 
-file_name = None
-base_preguntas = []
 
-if os.path.exists(NOMBRE_CSV):
-    base_preguntas = leer_preguntas_csv(NOMBRE_CSV)
-    file_name = NOMBRE_CSV
-elif os.path.exists(NOMBRE_TXT):
-    base_preguntas = leer_preguntas_txt(NOMBRE_TXT)
-    file_name = NOMBRE_TXT
-elif os.path.exists(NOMBRE_JSON):
-    base_preguntas = leer_preguntas_json(NOMBRE_JSON)
-    file_name = NOMBRE_JSON
-else:
-    file_name = NOMBRE_CSV
-    base_preguntas = [
-        ("¿Qué es un Gran Premio en Fórmula 1?", "Un Gran Premio es una carrera del campeonato de F1 que se celebra en diferentes países."),
-        ("¿Qué significa pole position?", "La pole position es la primera posición de largada obtenida por el piloto más rápido en clasificación."),
-        ("¿Cuántos puntos se otorgan al ganador de una carrera de F1?", "Al ganador se le otorgan 25 puntos en el campeonato.")
-    ]
-    with open(file_name, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.writer(f, delimiter=';')
-        writer.writerow(['pregunta', 'respuesta'])
-        writer.writerows(base_preguntas)
-    print(f"Archivo '{file_name}' creado con preguntas de ejemplo sobre F1.")
+def Main():
+    """
+    Objetivo: Función principal que ejecuta el chatbot.
+    Parámetros de Entrada: Ninguno
+    Parámetros de Salida: Ninguno
+    """
+    
+    file_name = None
+    base_preguntas = []
 
-print("Bienvenido al ChikiChiki Bot de preguntas sobre Fórmula 1. Escriba su pregunta o 'salir' para terminar.")
-
-while True:
-    entrada = input("Usuario: ").strip()
-    if entrada.lower() == 'salir':
-        print("ChikiChiki Bot: ¡Hasta luego!")
-        break
-    if not entrada:
-        continue
-
-    sugerencias = obtener_mejores_coincidencias(entrada, base_preguntas)
-    mejor = sugerencias[0] if sugerencias else (None, None, 0)
-
-    if mejor[2] >= 0.6:
-        print(f"ChikiChiki Bot: (Similitud {int(mejor[2]*100)}%)")
-        print(f"ChikiChiki Bot: {mejor[1]}")
-        registrar_en_log(entrada, mejor[1], mejor[2])
+    if os.path.exists(NOMBRE_CSV):
+        base_preguntas = leer_preguntas_csv(NOMBRE_CSV)
+        file_name = NOMBRE_CSV
+    elif os.path.exists(NOMBRE_TXT):
+        base_preguntas = leer_preguntas_txt(NOMBRE_TXT)
+        file_name = NOMBRE_TXT
+    elif os.path.exists(NOMBRE_JSON):
+        base_preguntas = leer_preguntas_json(NOMBRE_JSON)
+        file_name = NOMBRE_JSON
     else:
-        print("ChikiChiki Bot: No encontré una respuesta exacta.")
-        if sugerencias:
-            print("ChikiChiki Bot: ¿Quizás quiso decir:")
-            for i, (preg, _, sim) in enumerate(sugerencias, 1):
-                print(f"  {i}. {preg} (similitud: {int(sim*100)}%)")
-        registrar_en_log(entrada, "SIN RESPUESTA", 0.0)
-        op = input("De cualquier manera ¿Deseas agregar la respuesta a tu pregunta a la base de datos? (s/n): ").strip().lower()
-        if op == 's':
-            nueva_resp = input("Ingrese la respuesta: ").strip()
-            if nueva_resp:
-                base_preguntas.append((entrada, nueva_resp))
-                if file_name.endswith('.json'):
-                    with open(file_name, 'w', encoding='utf-8') as f:
-                        json.dump([{"pregunta": p, "respuesta": r} for p, r in base_preguntas], f, ensure_ascii=False, indent=4)
-                elif file_name.endswith('.csv'):
-                    with open(file_name, 'a', newline='', encoding='utf-8') as f:
-                        writer = csv.writer(f, delimiter=';')
-                        writer.writerow([entrada, nueva_resp])
-                elif file_name.endswith('.txt'):
-                    with open(file_name, 'a', encoding='utf-8') as f:
-                        f.write(f"{entrada}:{nueva_resp}\n")
-                print("ChikiChiki Bot: ¡Pregunta y respuesta agregadas!")
-                registrar_en_log(entrada, "(Agregada por usuario)", 0.0)
-            else:
-                print("ChikiChiki Bot: Respuesta vacía. No se agregó nada.")
+        file_name = NOMBRE_CSV
+        base_preguntas = [
+            ("¿Qué es un Gran Premio en Fórmula 1?", "Un Gran Premio es una carrera del campeonato de F1 que se celebra en diferentes países."),
+            ("¿Qué significa pole position?", "La pole position es la primera posición de largada obtenida por el piloto más rápido en clasificación."),
+            ("¿Cuántos puntos se otorgan al ganador de una carrera de F1?", "Al ganador se le otorgan 25 puntos en el campeonato.")
+        ]
+        with open(file_name, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f, delimiter=';')
+            writer.writerow(['pregunta', 'respuesta'])
+            writer.writerows(base_preguntas)
+        print(f"Archivo '{file_name}' creado con preguntas de ejemplo sobre F1.")
+
+    print("Bienvenido al ChikiChiki Bot de preguntas sobre Fórmula 1. Escriba su pregunta o 'salir' para terminar.")
+
+    while True:
+        entrada = input("Usuario: ").strip()
+        if entrada.lower() in ["salir", "exit", "quit"]:
+            print("ChikiChiki Bot: ¡Hasta luego!")
+            break
+        if not entrada:
+            continue
+
+        sugerencias = obtener_mejores_coincidencias(entrada, base_preguntas)
+        mejor = sugerencias[0] if sugerencias else (None, None, 0)
+
+        if mejor[2] >= 0.6:
+            print(f"ChikiChiki Bot: (Similitud {int(mejor[2]*100)}%)")
+            print(f"ChikiChiki Bot: {mejor[1]}")
+            registrar_en_log(entrada, mejor[1], mejor[2])
+        else:
+            print("ChikiChiki Bot: No encontré una respuesta exacta.")
+            if sugerencias:
+                print("ChikiChiki Bot: ¿Quizás quiso decir:")
+                for i, (preg, _, sim) in enumerate(sugerencias, 1):
+                    print(f"  {i}. {preg} (similitud: {int(sim*100)}%)")
+            registrar_en_log(entrada, "SIN RESPUESTA", 0.0)
+            agregar = input("De cualquier manera ¿Deseas agregar la respuesta a tu pregunta a la base de datos? (s/n): ").strip().lower()
+            if agregar in ("s", "si", "sí", "y", "yes"):
+                nueva_resp = input("Ingrese la respuesta: ").strip()
+                if nueva_resp:
+                    base_preguntas.append((entrada, nueva_resp))
+                    if file_name.endswith('.json'):
+                        with open(file_name, 'w', encoding='utf-8') as f:
+                            json.dump([{"pregunta": p, "respuesta": r} for p, r in base_preguntas], f, ensure_ascii=False, indent=4)
+                    elif file_name.endswith('.csv'):
+                        with open(file_name, 'a', newline='', encoding='utf-8') as f:
+                            writer = csv.writer(f, delimiter=';')
+                            writer.writerow([entrada, nueva_resp])
+                    elif file_name.endswith('.txt'):
+                        with open(file_name, 'a', encoding='utf-8') as f:
+                            f.write(f"{entrada}:{nueva_resp}\n")
+                    print("ChikiChiki Bot: ¡Pregunta y respuesta agregadas!")
+                    registrar_en_log(entrada, "(Agregada por usuario)", 0.0)
+                else:
+                    print("ChikiChiki Bot: Respuesta vacía. No se agregó nada.")
+
+
+if __name__ == "__main__":
+    Main()
+

@@ -11,3 +11,39 @@
 2025-05-20 14:02:18	Pregunta: "grandes premios ganados"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
 2025-05-20 14:05:25	Pregunta: "python -u "c:\Users\Juan\Desktop\chikichikiTeam\chatbot.py""	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
 2025-05-20 14:11:37	Pregunta: "python -u "c:\Users\Juan\Desktop\chikichikiTeam\chatbot.py""	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:12:03	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:12:06	Pregunta: "quien gano la ultima temporada"	Respuesta: "Max verstappen ganó la temporada de 2024"	Similitud: 1.00
+2025-05-24 17:12:17	Pregunta: "gran premio"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:12:28	Pregunta: "¿Qué Gran Premio ha tenido más ediciones bajo lluvia intensa?"	Respuesta: "El GP de Bélgica es famoso por sus condiciones variables y fuertes lluvias."	Similitud: 1.00
+2025-05-24 17:12:38	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:18:34	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:18:39	Pregunta: "quien gano la ultima temporada"	Respuesta: "Max verstappen ganó la temporada de 2024"	Similitud: 1.00
+2025-05-24 17:19:02	Pregunta: "mas campeonatos"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:19:13	Pregunta: "¿Quién ganó en su debut en un GP puntuable del Campeonato?"	Respuesta: "Giancarlo Baghetti ganó el GP de Francia de 1961 en su primera carrera."	Similitud: 1.00
+2025-05-24 17:19:20	Pregunta: "debut"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:19:22	Pregunta: "¿Qué piloto encadenó más carreras consecutivas puntuando?"	Respuesta: "Lewis Hamilton puntuó en 48 Grandes Premios seguidos entre 2018 y 2020."	Similitud: 1.00
+2025-05-24 17:19:38	Pregunta: "que piloto tiene la mayor cantidad de poles"	Respuesta: "El Hungaroring en Hungría cuenta con 14 curvas."	Similitud: 0.65
+2025-05-24 17:19:56	Pregunta: "piloto con mas pole positions"	Respuesta: "Lewis Hamilton registra 104 poles, reflejo de su superioridad en clasificación."	Similitud: 0.67
+2025-05-24 17:22:01	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:22:04	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00
+2025-05-24 17:26:40	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:26:45	Pregunta: "¿Qué piloto ganó más carreras para Ferrari?"	Respuesta: "Michael Schumacher triunfó en 72 Grandes Premios con Ferrari."	Similitud: 1.00
+2025-05-24 17:27:12	Pregunta: "quien es el director de equipo de ferrari actualmente"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:27:26	Pregunta: "quien es el director de equipo de ferrari actualmente"	Respuesta: "(Agregada por usuario)"	Similitud: 0.00
+2025-05-24 17:27:41	Pregunta: "director de equipo ferrari actualmente"	Respuesta: "Fred vasseur"	Similitud: 0.83
+2025-05-24 17:29:43	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:29:47	Pregunta: "quien gano la ultima temporada"	Respuesta: "Max verstappen ganó la temporada de 2024"	Similitud: 1.00
+2025-05-24 17:29:51	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 17:30:05	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00
+2025-05-24 19:12:38	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:12:46	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00
+2025-05-24 19:12:55	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:16:52	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:16:54	Pregunta: "quien gano la ultima temporada"	Respuesta: "Max verstappen ganó la temporada de 2024"	Similitud: 1.00
+2025-05-24 19:17:18	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:17:19	Pregunta: "quien gano la ultima temporada"	Respuesta: "Max verstappen ganó la temporada de 2024"	Similitud: 1.00
+2025-05-24 19:17:22	Pregunta: "h"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:17:23	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00
+2025-05-24 19:18:17	Pregunta: "a"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:25:47	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:25:53	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00

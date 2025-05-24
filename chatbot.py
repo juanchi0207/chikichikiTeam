@@ -346,3 +346,4 @@ def setup_gui():
 if __name__ == '__main__':
     load_base_preguntas()
     setup_gui()
+    

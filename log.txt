@@ -35,3 +35,15 @@
 2025-05-24 17:29:47	Pregunta: "quien gano la ultima temporada"	Respuesta: "Max verstappen ganó la temporada de 2024"	Similitud: 1.00
 2025-05-24 17:29:51	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
 2025-05-24 17:30:05	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00
+2025-05-24 19:12:38	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:12:46	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00
+2025-05-24 19:12:55	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:16:52	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:16:54	Pregunta: "quien gano la ultima temporada"	Respuesta: "Max verstappen ganó la temporada de 2024"	Similitud: 1.00
+2025-05-24 19:17:18	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:17:19	Pregunta: "quien gano la ultima temporada"	Respuesta: "Max verstappen ganó la temporada de 2024"	Similitud: 1.00
+2025-05-24 19:17:22	Pregunta: "h"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:17:23	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00
+2025-05-24 19:18:17	Pregunta: "a"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:25:47	Pregunta: "gp"	Respuesta: "SIN RESPUESTA"	Similitud: 0.00
+2025-05-24 19:25:53	Pregunta: "¿Qué país ha acogido más Grandes Premios de F1?"	Respuesta: "Reino Unido ha albergado más de 70 carreras en Silverstone y otros trazados."	Similitud: 1.00

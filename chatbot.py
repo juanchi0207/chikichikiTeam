@@ -13,10 +13,12 @@ from tkinter import scrolledtext, simpledialog, messagebox
 # =========================================
 stemmer = SnowballStemmer('spanish')
 
-NOMBRE_CSV = 'preguntas.csv'
-NOMBRE_TXT = 'preguntas.txt'
-NOMBRE_JSON = 'preguntas.json'
-LOG_FILE = 'log.txt'
+# Archivos de datos ubicados en el mismo directorio que este script
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+NOMBRE_CSV = os.path.join(BASE_DIR, 'preguntas.csv')
+NOMBRE_TXT = os.path.join(BASE_DIR, 'preguntas.txt')
+NOMBRE_JSON = os.path.join(BASE_DIR, 'preguntas.json')
+LOG_FILE = os.path.join(BASE_DIR, 'log.txt')
 SIMILARITY_THRESHOLD = 0.7
 
 # =========================================
@@ -164,11 +166,6 @@ global base_preguntas, file_name, root, chat_area, suggestions_frame, entry
 base_preguntas = []
 file_name = None
 
-# Constantes de nombres de archivo y umbral
-NOMBRE_CSV = 'preguntas.csv'
-NOMBRE_TXT = 'preguntas.txt'
-NOMBRE_JSON = 'preguntas.json'
-SIMILARITY_THRESHOLD = 0.7
 
 # =========================================
 
